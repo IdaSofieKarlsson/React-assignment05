@@ -1,0 +1,28 @@
+div {
+    height: 300px;
+    width: 300px;
+    border: black 3px solid;
+    margin: auto;
+    
+}
+
+p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkcyan;
+    display: block;
+}
+
+button {
+    height: 40px;
+    width: 250px;
+    border: rgb(2, 10, 44) 3px solid;
+    background-color: rgb(197, 220, 220);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(1, 45, 45);
+    
+}
+button:hover {
+    cursor: crosshair;
+}
