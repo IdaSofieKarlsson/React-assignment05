@@ -11,10 +11,11 @@ p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: darkcyan;
     display: block;
+    margin: 5px;
 }
 
 button {
-    height: 40px;
+    height: 100px;
     width: 250px;
     border: rgb(2, 10, 44) 3px solid;
     background-color: rgb(197, 220, 220);

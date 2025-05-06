@@ -9,28 +9,26 @@ import { useEffect, useState } from "react";
 
 const API = () => {
 
-    const [joke, setJoke] = useState({});
+    const [catfact, setCatFact] = useState({});
 
     const fetchData = async () => {
         try {
-        const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+        const response = await fetch("https://catfact.ninja/fact");
         const data = await response.json();
-        setJoke(data);
+        setCatFact(data);
         } catch (error) {
         console.error("Error fetching data:", error);
         }
     };
 
-    const generateJoke = () => {
+    const generateCatFact = () => {
         fetchData();
     };
 
     return (
     <div>
-        <button onClick={generateJoke}>Click for lame joke...</button>
-        <p>Setup: {joke.setup}</p>
-        <br />
-        <p>Punchline: {joke.punchline}</p>
+        <button onClick={generateCatFact}>Click for an interesting fact about cats</button>
+        <p>{catfact.fact}</p>
     </div>);
     };
 
